@@ -1,5 +1,5 @@
 
-public class teste_processamento {
+public class TesteDeProcessamento {
 	
 	public static void main(String[] args) {
 		
