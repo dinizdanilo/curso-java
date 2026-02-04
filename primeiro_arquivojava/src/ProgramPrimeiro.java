@@ -3,8 +3,7 @@ import java.util.Locale;
 public class ProgramPrimeiro {
  
 	public static void main(String[] args) {
-		
-		
+
 		String nome = "Maria";
 		int idade = 31;
 		double renda = 4000.0;
