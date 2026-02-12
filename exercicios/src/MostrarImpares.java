@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MostrarPares {
+public class MostrarImpares {
 
     public static void main(String[] args) {
 
@@ -14,6 +14,5 @@ public class MostrarPares {
             System.out.println(i);
             }
         }
-
     }
 }
