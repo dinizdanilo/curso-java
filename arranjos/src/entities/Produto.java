@@ -5,7 +5,7 @@ public class Produto {
     private String nome;
     private double preco;
 
-    public Produto(String nome, double prece) {
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -21,7 +21,7 @@ public class Produto {
         return preco;
     }
 
-    public void setPrece(double prece) {
+    public void setPreco(double prece) {
         this.preco = prece;
     }
 }
