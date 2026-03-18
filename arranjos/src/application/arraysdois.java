@@ -1,5 +1,7 @@
 package application;
 
+import entities.Produto;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,31 +12,29 @@ public class arraysdois {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Diga quantas vezes o programa deve repetir: ");
+        System.out.print("Digite quantos produtos você quer cadastrar: ");
         int n = sc.nextInt();
         sc.nextLine();
 
-        String[] nome = new String[n];
-        double [] preco = new double[n];
+        Produto[] vect = new Produto[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.print("Fale o nome do produto: ");
-            nome[i] = sc.nextLine();
-
+            System.out.print("Digite o nome do produto: ");
+            String nome = sc.nextLine();
             System.out.print("Digite o preço do produto: ");
-            preco[i] = sc.nextDouble();
+            double preco = sc.nextDouble();
             sc.nextLine();
 
-            System.out.printf("%s: R$%.2f%n", nome[i], preco[i]);
+            vect[i] = new Produto(nome, preco);
         }
 
         double soma = 0.0;
         for (int i = 0; i < n; i++) {
-            soma += preco[i];
+            soma += vect[i].getPreco();
         }
         double media = soma / n;
 
-        System.out.println("\nMédia de preços: " + media);
+        System.out.printf("Preço médio = %.2f%n", media);
 
         sc.close();
     }
